@@ -8,7 +8,7 @@ let app = express();
 
 //usando as rotas
 app.use(routesIndex);
-// definindo um padrao para a rota user sendo '/users'
+// definindo um padrao para a rota user 
 app.use('/users',routesUsers);
 
 

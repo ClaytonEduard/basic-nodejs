@@ -1,0 +1,23 @@
+{
+  "name": "basic-nodejs",
+  "version": "1.0.0",
+  "description": "Instalação e princípios do Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaytonEduard/basic-nodejs.git"
+  },
+  "author": "Clayton Eduard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClaytonEduard/basic-nodejs/issues"
+  },
+  "homepage": "https://github.com/ClaytonEduard/basic-nodejs#readme",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "express": "^4.18.1"
+  }
+}
