@@ -30,7 +30,7 @@ routes.get('/admin', (req, res) => {
 
 
 //exportando o aquivos para a index
-module.exports = (app) => {
+module.exports = (app) {
     app.get('/users', (req, res) => {
 
         res.statusCode = 200;
@@ -43,8 +43,8 @@ module.exports = (app) => {
             }]
         });
     })
-
-    app.get('/users/admin', (req, res) => {
+    
+    appF.get('/users/admin', (req, res) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
         res.json({

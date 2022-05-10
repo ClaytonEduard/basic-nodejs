@@ -17,6 +17,9 @@ const consign = require('consign');
 //o congin vai incluir todos os dados das routes no app
 consign().include('routes').into(app);
 
+
+
+
 //criando o servidor basico na unha e armazendo na variavel server
 app.listen(3000, '127.0.0.1', () => {
     console.log("Servidor Online")

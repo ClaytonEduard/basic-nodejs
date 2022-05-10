@@ -9,13 +9,15 @@ app.use(routesIndex);
 // definindo um padrao para a rota user sendo '/users'
 app.use('/users',routesUsers); */
 
-//carreando dados da express
-let app = express();
 
 //trabalhando com o congin
-const consign = require('consign');
-//o congin vai incluir todos os dados das routes no app
-consign().include('routes').into(app);
+const congin = require('congin');
+
+congin()include('rou')
+
+
+//carreando dados da express
+let app = express();
 
 //criando o servidor basico na unha e armazendo na variavel server
 app.listen(3000, '127.0.0.1', () => {
