@@ -18,7 +18,7 @@ let app = express();
 
 
 // chamando o body parser, todos os dados via POST converta para JSON
-app.use(bodyParser.urlencoded({ extended: false }));
+a
 app.use(bodyParser.json());
 
 

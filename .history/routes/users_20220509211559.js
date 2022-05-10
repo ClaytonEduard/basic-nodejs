@@ -27,13 +27,7 @@ routes.get('/admin', (req, res) => {
 
 
 */
-// instalando o NeDB
-let NeDB = require('nedb');
-//criando o banco 
-let db = new NeDB({
-    filename: 'users.db',
-    autoload: true
-})
+
 
 //exportando o aquivos para a index
 module.exports = (app) => {
@@ -51,16 +45,10 @@ module.exports = (app) => {
     })
 
     app.post('/users', (req, res) => {
-
-        db.insert(req.body, (err, user) => {
-            if (err) {
-                console.log(`error: ${err}`);
-                res.status(400).json({
-                    error: err
-                })
-            } else {
-                res.status(200).json(user)
-            }
-        })
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'application/json');
+        res.json({
+            users: []
+        });
     })
 };

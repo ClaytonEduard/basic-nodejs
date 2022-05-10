@@ -12,14 +12,11 @@ app.use('/users',routesUsers); */
 //carregando o body parser
 const bodyParser = require('body-parser');
 
+// chamando o body parser
+app.use(bodyParser.json());
 
 //carreando dados da express
 let app = express();
-
-
-// chamando o body parser, todos os dados via POST converta para JSON
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
 
 
 //trabalhando com o congin

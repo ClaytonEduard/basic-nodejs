@@ -56,10 +56,8 @@ module.exports = (app) => {
             if (err) {
                 console.log(`error: ${err}`);
                 res.status(400).json({
-                    error: err
+                    err
                 })
-            } else {
-                res.status(200).json(user)
             }
         })
     })

@@ -18,9 +18,7 @@ let app = express();
 
 
 // chamando o body parser, todos os dados via POST converta para JSON
-app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
 
 //trabalhando com o congin
 const consign = require('consign');

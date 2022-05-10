@@ -58,7 +58,7 @@ module.exports = (app) => {
                 res.status(400).json({
                     error: err
                 })
-            } else {
+            }else{
                 res.status(200).json(user)
             }
         })
