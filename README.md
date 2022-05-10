@@ -9,7 +9,7 @@ Instalação e princípios do Nodejs
     -Configurando banco NeDB;
     -Validação de dados via Post;
 
-- instalação 
+- Instalação 
     - npm install express;
     - npm install body-parser --save;
     - npm install consign --save;
