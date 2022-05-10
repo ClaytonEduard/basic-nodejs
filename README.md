@@ -3,11 +3,11 @@ Instalação e princípios do Nodejs
 
 - Mini Crud:
 - Package:
-    -Express;
-    -Configuração de rotas com Consign;
-    -Recebendo dados com o Postman;
-    -Configurando banco NeDB;
-    -Validação de dados via Post;
+    - Express;
+    - Configuração de rotas com Consign;
+    - Recebendo dados com o Postman;
+    - Configurando banco NeDB;
+    - Validação de dados via Post;
 
 - Instalação 
     - npm install express;
