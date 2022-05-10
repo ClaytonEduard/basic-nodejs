@@ -12,6 +12,8 @@ app.use('/users',routesUsers); */
 //carregando o body parser
 const bodyParser = require('body-parser');
 
+// carregando o express validator
+const expressValidator = require('express-validator');
 
 //carreando dados da express
 let app = express();
@@ -20,12 +22,13 @@ let app = express();
 // chamando o body parser, todos os dados via POST converta para JSON
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(expressValidator());
 
 
 //trabalhando com o congin
 const consign = require('consign');
 //o congin vai incluir todos os dados das routes no app
-consign().include('routes').into(app);
+consign().include('routes').include('utils').into(app);
 
 //criando o servidor basico na unha e armazendo na variavel server
 app.listen(3000, '127.0.0.1', () => {
